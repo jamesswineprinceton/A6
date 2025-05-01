@@ -1,6 +1,6 @@
 /*--------------------------------------------------------------------*/
 /* miniassembler.c                                                    */
-/* Author: Bob Dondero, Donna Gabai                                   */
+/* Author: Bob Dondero, Donna Gabai, James Swinehart, Benny Wertheimer*/
 /*--------------------------------------------------------------------*/
 
 #include "miniassembler.h"
@@ -19,10 +19,19 @@ static void setField(unsigned int uiSrc, unsigned int uiSrcStartBit,
                      unsigned int *puiDest, unsigned int uiDestStartBit,
                      unsigned int uiNumBits) 
 {
-   unsigned int x = 1;
+   unsigned int one = 1;
+
+   /* Move to rightmost bit in field */
    uiSrc >>= uiSrcStartBit;
-   uiSrc &= ((x << uiNumBits) - 1);
-   uiSrc <<= uiDestStartBit;                  
+
+   /* Set the appropriate bits by using & with 1's in the appropriate
+   bits' place */
+   uiSrc &= ((one << uiNumBits) - 1);
+
+   /* Move to destination start bit */
+   uiSrc <<= uiDestStartBit;
+   
+   /* Add any new appropriate 1 bits to destination */ 
    *puiDest |= uiSrc;
 }
 

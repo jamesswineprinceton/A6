@@ -149,22 +149,22 @@ BSS section
 | 0x420075          | Address of 1st padding byte in the name array    |
 | 0x420076          | Address of 2nd padding byte in the name array    |
 | 0x420077          | Address of 3rd padding byte in the name array    |
-| 0x420078          | Address of 4th padding byte in the name array    |
-| 0x420079          | Address of 5th padding byte in the name array    |
-| 0x42007a          | Address of 6th padding byte in the name array    |
-| 0x42007b          | Address of 7th padding byte in the name array    |
-| 0x42007c          | Address of 8th padding byte in the name array    |
-| 0x42007d          | Address of 9th padding byte in the name array    |
-| 0x42007e          | Address of 10th padding byte in the name array   |
-| 0x42007f          | Address of 11th padding byte in the name array   |
-| 0x420080          | Address of 12th padding byte in the name array   |
-| 0x420081          | Address of 13th padding byte in the name array   |
-| 0x420082          | Address of 14th padding byte in the name array   |
-| 0x420083          | Address of 15th padding byte in the name array   |
-| 0x420084          | Address of 16th padding byte in the name array   |
-| 0x420085          | Address of 17th padding byte in the name array   |
-| 0x420086          | Address of 18th padding byte in the name array   |
-| 0x420087          | Address of 19th padding byte in the name array   |
+| 0x420078          | Address of 4th padding byte or mov instruction   |
+| 0x420079          | Address of 5th padding byte or mov instruction   |
+| 0x42007a          | Address of 6th padding byte or mov instruction   |
+| 0x42007b          | Address of 7th padding byte or mov instruction   |
+| 0x42007c          | Address of 8th padding byte or adr instruction   |
+| 0x42007d          | Address of 9th padding byte or adr instruction   |
+| 0x42007e          | Address of 10th padding byte or adr instruction  |
+| 0x42007f          | Address of 11th padding byte or adr instruction  |
+| 0x420080          | Address of 12th padding byte or strb instruction |
+| 0x420081          | Address of 13th padding byte or strb instruction |
+| 0x420082          | Address of 14th padding byte or strb instruction |
+| 0x420083          | Address of 15th padding byte or strb instruction |
+| 0x420084          | Address of 16th padding byte or b instruction    |
+| 0x420085          | Address of 17th padding byte or b instruction    |
+| 0x420086          | Address of 18th padding byte or b instruction    |
+| 0x420087          | Address of 19th padding byte or b instruction    |
 | 0x420088          | Address of 20th padding byte in the name array   |
 ------------------------------------------------------------------------
 

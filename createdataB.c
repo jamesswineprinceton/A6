@@ -11,10 +11,10 @@ to get a B, the latter of which will overwrite getName's stored x30. */
 #include <stdlib.h>
 
 /* Writes a file dataB with our names (28 bytes + 1 nullbyte), padding 
-(20 bytes), and the address of our target statement (0x400890) as a 
+(19 bytes), and the address of our target statement (0x400890) as a 
 little-endian unsigned integer to overrun the grader's buffer array and 
 run the statement that sets our grade to a B. */
-int main(){
+int main() {
     FILE *psFile;
     int i;
 
